@@ -1,0 +1,15 @@
+[
+  {
+    "Id": "b40e8bad-a65c-4f12-9bb7-d29e7ece4696",
+    "StudentId": "962d",
+    "Subject": "Matematicas",
+    "Grade": "90"
+  },
+  {
+    "Id": "b90c3ed7-9136-45c4-b616-84624809d321",
+    "StudentId": "53bb",
+    "Subject": "Sociologia",
+    "Grade": "95"
+  }
+
+]
