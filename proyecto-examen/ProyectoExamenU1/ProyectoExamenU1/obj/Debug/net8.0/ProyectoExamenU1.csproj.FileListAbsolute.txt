@@ -32,3 +32,4 @@ C:\Users\PC\Desktop\POO\Unidad 1\Examen-POO-U1\proyecto-examen\ProyectoExamenU1\
 C:\Users\PC\Desktop\POO\Unidad 1\Examen-POO-U1\proyecto-examen\ProyectoExamenU1\ProyectoExamenU1\obj\Debug\net8.0\ProyectoExamenU1.pdb
 C:\Users\PC\Desktop\POO\Unidad 1\Examen-POO-U1\proyecto-examen\ProyectoExamenU1\ProyectoExamenU1\obj\Debug\net8.0\ProyectoExamenU1.genruntimeconfig.cache
 C:\Users\PC\Desktop\POO\Unidad 1\Examen-POO-U1\proyecto-examen\ProyectoExamenU1\ProyectoExamenU1\obj\Debug\net8.0\ref\ProyectoExamenU1.dll
+C:\Users\PC\Desktop\POO\Unidad 1\Examen-POO-U1\proyecto-examen\ProyectoExamenU1\ProyectoExamenU1\bin\Debug\net8.0\SeedData\rating.json

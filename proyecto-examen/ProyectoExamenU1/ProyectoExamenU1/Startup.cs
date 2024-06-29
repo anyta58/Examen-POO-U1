@@ -1,4 +1,7 @@
-﻿namespace ProyectoExamenU1
+﻿using ProyectoExamenU1.Services;
+using ProyectoExamenU1.Services.Interfaces;
+
+namespace ProyectoExamenU1
 {
     public class Startup
     {
@@ -15,7 +18,8 @@
             services.AddSwaggerGen();
 
             // Add custom services
-            //services.AddTransient<ICategoriesService, CategoriesService>();
+            services.AddTransient<IRatingService, ratingService>();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

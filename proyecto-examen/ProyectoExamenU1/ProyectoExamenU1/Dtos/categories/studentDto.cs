@@ -2,7 +2,7 @@
 
 namespace ProyectoExamenU1.Dtos.categories
 {
-    public class studentDto
+    public class StudentDto
     {
         public Guid StudentId { get; set; }
         public string Name { get; set; }

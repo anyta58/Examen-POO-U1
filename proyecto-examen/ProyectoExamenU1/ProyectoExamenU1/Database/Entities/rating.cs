@@ -2,7 +2,7 @@
 
 namespace ProyectoExamenU1.Database.Entities
 {
-    public class rating
+    public class Rating
     {
         public Guid Id { get; set; }
 

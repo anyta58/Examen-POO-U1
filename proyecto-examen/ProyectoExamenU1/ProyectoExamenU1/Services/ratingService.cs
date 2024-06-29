@@ -38,17 +38,15 @@ namespace ProyectoExamenU1.Services
                 Grade = dto.Grade,
             };
 
-            ratingDtos.Add(ratingDto);
+            ratingsDtos.Add(ratingDto);
 
-            var ratings = ratingsDtos.Select(x => new rating
+            var ratings = ratingsDtos.Select(x => new Rating
             {
                 Id = x.Id,
                 StudentId = x.StudentId,
                 Subject = dto.Subject,
                 Grade = dto.Grade,
             }).ToList();
-
-            await WriteRatingsToFileAsync(ratings);
 
             return true;
         }
@@ -73,7 +71,7 @@ namespace ProyectoExamenU1.Services
                 }
             }
 
-            var ratings = ratingsDto.Select(x => new rating
+            var ratings = ratingsDto.Select(x => new Rating
             {
                 Id = x.Id,
                 StudentId = x.StudentId,
@@ -81,7 +79,6 @@ namespace ProyectoExamenU1.Services
                 Grade = dto.Grade,
             }).ToList();
 
-            await WriteRatingsToFileAsync(ratings);
             return true;
         }
 
@@ -97,7 +94,7 @@ namespace ProyectoExamenU1.Services
 
             ratingsDto.Remove(ratingToDelete);
 
-            var categories = ratingsDto.Select(x => new rating
+            var categories = ratingsDto.Select(x => new Rating
             {
                 Id = x.Id,
                 StudentId = x.StudentId,
@@ -105,7 +102,6 @@ namespace ProyectoExamenU1.Services
                 Grade = x.Grade,
             }).ToList();
 
-            await WriteRatingsToFileAsync(categories);
 
             return true;
         }
@@ -119,7 +115,7 @@ namespace ProyectoExamenU1.Services
 
             var json = await File.ReadAllTextAsync(_JSON_FILE);
 
-            var ratings = JsonConvert.DeserializeObject<List<rating>>(json);
+            var ratings = JsonConvert.DeserializeObject<List<Rating>>(json);
 
             var dtos = ratings.Select(x => new ratingDtos
             {
